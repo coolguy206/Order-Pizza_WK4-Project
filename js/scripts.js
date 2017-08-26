@@ -97,7 +97,7 @@ $(document).ready(function() {
 
     // if no checkboxes selected output the alert message
     if(checked == 0){
-      $('.toppings').prepend('<h3>Please select at least on topping</h3>');
+      $('.toppings').prepend('<h3>Please select at least one topping</h3>');
       //stop the submit event
       return true;
 
