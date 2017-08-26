@@ -12,41 +12,38 @@
     <div class="container">
       <h1>Your Pizza<h1>
       <h3>Please choose your pizza:</h3>
+      <h4>Pizza Size Price</h4>
+      <ul>
+        <li>small $9</li>
+        <li>medium $10</li>
+        <li>large $11</li>
+      </ul>
+
+      <h4>Pizza Toppings Price</h4>
+      <ul class="toppings-price"></ul>
+
       <form>
         <div class="form-group">
           <label for="size">Size:</label>
-          <select id="size" class="form-control">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
+          <select id="size" class="form-control size">
+            <option value="9" data-size="small">Small</option>
+            <option value="10" data-size="medium">Medium</option>
+            <option value="11" data-size="large">Large</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="toppings">Size:</label>
-          <select id="toppings" class="form-control">
-            <option value="1">Small</option>
-            <option value="2">Medium</option>
-            <option value="3">Large</option>
-          </select>
-        </div>
-        <!-- <div class="form=group">
+
+
+        <div class="form-group toppings">
     	    <p>Toppings:</p>
-  		    <input type="checkbox" id="toppings" name="toppings" value="1" checked:"checked">Pepperoni<br>
-          <input type="checkbox" id="toppings" name="toppings" value="1">Grilled Chicken<br>
-  		    <input type="checkbox" id="toppings" name="toppings" value="1">Mushrooms<br>
-          <input type="checkbox" id="toppings" name="toppings" value="1">Pineapple<br>
-          <input type="checkbox" id="toppings" name="toppings" value="1">Spinach<br>
-          <input type="checkbox" id="toppings" name="toppings" value="1">Onions<br>
-          <input type="checkbox" id="toppings" name="toppings" value="1">Anchovy<br>
-	      </div> -->
+	      </div>
 
         <button type="submit" class="btn">Submit</button>
       </form>
 
       <div class="your-pizza">
         <h3>This is your pizza:</h3>
-        <p>Cost:</p>
-        <button class="order">Order</button>
+        <div class="pizza-details"></div>
+        <h4 class="order"></h4>
       </div>
     </div>
   </body>
